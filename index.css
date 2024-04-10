@@ -45,6 +45,8 @@ input {
 select{
     width: 80%;
     background: linear-gradient(21deg, #10abff, #1beabd);
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .bi-exclamation-circle{
