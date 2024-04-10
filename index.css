@@ -1,0 +1,53 @@
+body{
+    background-color: #344151;
+}
+
+
+.input-container{
+    width: auto;
+    text-align: center;
+}
+
+label{
+    color: lightgreen;
+}
+
+
+#input {
+    width: 50%; /
+    margin: auto; 
+    padding: 20px; 
+    border: 2px solid aliceblue; 
+}
+
+
+input {
+    width: 80%; 
+    margin-top: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(21deg, #10abff, #1beabd);
+    
+	
+    
+}
+
+    
+      
+
+
+
+
+.bi-question-circle{
+    color:aliceblue;
+}
+
+select{
+    width: 80%;
+    background: linear-gradient(21deg, #10abff, #1beabd);
+}
+
+.bi-exclamation-circle{
+    color:aliceblue;
+
+}
