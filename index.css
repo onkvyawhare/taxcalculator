@@ -53,3 +53,24 @@ select{
     color:aliceblue;
 
 }
+
+.modal-body{
+    text-align: center;
+}
+
+.btn-secondary{
+    display: block;
+    margin: auto;
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.error-icon:hover + .error-tooltip {
+    display: block;
+}
