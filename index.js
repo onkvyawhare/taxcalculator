@@ -21,35 +21,35 @@ document.addEventListener('DOMContentLoaded', function() {
       return isValid;
   }
 
-  // Submit button click event
+  
   document.getElementById('submitBtn').addEventListener('click', function() {
-      // Reset error icons
+      
       resetErrors();
 
-      // Validate inputs
+     
       const isValid = validateInputs();
       if (isValid) {
-          // If inputs are valid, proceed with tax calculation
+         
           calculateTax();
       }
   });
 
-  // Function to reset error icons
+  
   function resetErrors() {
       document.querySelectorAll('.bi-exclamation-circle').forEach(function(element) {
           element.style.display = 'none';
       });
   }
 
-  // Function to calculate tax
+  
   function calculateTax() {
-      // Fetch input values
+      
       const grossIncome = parseFloat(document.getElementById('grossincome').value);
       const extraIncome = parseFloat(document.getElementById('othincome').value);
       const age = document.getElementById('age').value;
       const deductions = parseFloat(document.getElementById('deduction').value);
 
-      // Calculate tax
+      
       let taxableIncome = grossIncome + extraIncome - deductions;
       let taxRate;
       if (age === '<40') {
@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       let tax = (taxableIncome > 800000 ? (taxableIncome - 800000) * taxRate : 0);
 
-      // Display tax result in modal
+      
       document.querySelector('.modal-title').textContent = "Tax Calculation Result";
       document.querySelector('.modal-body').innerHTML = "<p>Tax to be paid: " + tax.toFixed(2) + " Lakhs</p>";
 
-      // Show the modal
+      
       var myModal = new bootstrap.Modal(document.getElementById('modal'));
       myModal.show();
   }
